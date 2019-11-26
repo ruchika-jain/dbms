@@ -1,0 +1,47 @@
+<html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title> SIR MVIT CHEMISTRY LAB | HOME</title>
+    <link rel="stylesheet" type="text/css" href="static/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body style="background: white;">
+
+    <div class="custom-padding">
+            <nav>
+                <div class="logo"><img src = "static/smvitlogo.png" width = "45px", height = "30px"></div>
+                
+
+                <ul class="menu-area">
+                    
+                    <li><a href= {{ url_for('home') }} >Home</a></li>
+                    <li><a href= "chemicals.php" >Chemicals</a></li>
+                    <li><a href="/instruments">Instruments</a></li>
+                    <li><a href={{ url_for('glassware') }}>Glassware</a></li>
+                    <li><a href="/suppliers">Suppliers</a></li>
+                    <li><a href="javascript:window.close();">Logout</a></li>
+                </ul>
+            </nav>
+    </div>
+    <button onclick="window.location.href = 'form.html'">Add New</button>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sl No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Formula</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
